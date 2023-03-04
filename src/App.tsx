@@ -1,26 +1,21 @@
+// Description: Main App component
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+// Components
+import {WebLinkButtons} from "./components/WebLinkButtons";
+
+// App
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className={"h-screen w-full flex flex-col justify-center items-center gap-24"}>
+            <div>
+                <h1>IOtab</h1>
+            </div>
+
+            <WebLinkButtons />
+        </div>
+    );
 }
 
+// Export
 export default App;
