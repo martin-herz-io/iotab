@@ -1,5 +1,9 @@
 // React imports
 import React from 'react'
+import { ReactSVG } from 'react-svg';
+
+// Icons import
+import { get_ionic_line_icon, get_ionic_sharp_icon, get_ionic_solid_icon } from '../library/icons/ionic'; // Ionic Icons
 
 // Properties
 export type props = {
@@ -7,9 +11,6 @@ export type props = {
     type?: string;
     className?: string;
 }
-
-// Icons import
-import { get_ionic_line_icon, get_ionic_sharp_icon, get_ionic_solid_icon } from '../../library/icons/ionic'; // Ionic Icons
 
 // Component
 export const Icon: React.FC<props> = ({ name, type, className = 'w-5' }) => {
@@ -26,5 +27,9 @@ export const Icon: React.FC<props> = ({ name, type, className = 'w-5' }) => {
         SvgIcon = get_ionic_line_icon(name)
     }
 
-    return <SvgIcon className={className} />
+    if (!SvgIcon) {
+        return <></>
+    }
+
+    return <ReactSVG src={SvgIcon} className={className} />
 }

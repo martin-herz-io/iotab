@@ -4,13 +4,8 @@ import React from 'react';
 // Components
 import {WebLinkButton} from "./WebLinkButton";
 
-// Properties
-export type Props = {
-
-}
-
 // Component
-export const WebLinkButtons: React.FC<Props> = ({}) => {
+export const WebLinkButtons: React.FC = () => {
     const webLinkButtons = [
         {
             name: "Google",
@@ -83,6 +78,12 @@ export const WebLinkButtons: React.FC<Props> = ({}) => {
                     </>
                 )
             })}
+
+            <WebLinkButton newTab={true} />
+
+            <WebLinkButton newTab={true} />
+
+            <WebLinkButton newTab={true} />
 
             <WebLinkButton newTab={true} />
         </div>

@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 font-overpass;
+  }
+
+  h1, h2, h3, h4, h5, p, li{
+    @apply cursor-default m-0 p-0;
+
+    &.muted{
+      &-none{
+        @apply opacity-100;
+      }
+
+      &-1{
+        @apply opacity-60;
+      }
+
+      &-2{
+        @apply opacity-50;
+      }
+
+      &-3{
+        @apply opacity-40;
+      }
+
+      &-4{
+        @apply opacity-30;
+      }
+
+      &-5{
+        @apply opacity-20;
+      }
+    }
+  }
+
+  h1, .h1{
+    @apply text-4xl font-extrabold;
+  }
+
+  h2, .h2{
+    @apply text-3xl font-extrabold;
+  }
+
+  h3, .h3{
+    @apply text-2xl font-extrabold;
+  }
+
+  h4, .h4{
+    @apply text-xl font-extrabold;
+  }
+
+  h5, .h5{
+    @apply text-lg font-extrabold;
+  }
+
+  p, li{
+    @apply text-base font-medium;
+
+    &.xs{
+      @apply text-xs font-medium;
+    }
+
+    &.sm{
+      @apply text-sm font-medium;
+    }
+
+    &.md{
+      @apply text-base font-medium;
+    }
+
+    &.lg{
+      @apply text-lg font-medium;
+    }
+
+    &.xl{
+      @apply text-xl font-medium;
+    }
+
+    &.xl2{
+      @apply text-2xl font-medium;
+    }
+  }
+}
