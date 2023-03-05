@@ -85,3 +85,13 @@
     }
   }
 }
+
+@layer components {
+  .button {
+    @apply outline-none px-3 pt-1.5 pb-1 rounded-full bg-zinc-300 dark:bg-zinc-800 hover:bg-transparent focus-within:bg-transparent border-[1px] border-zinc-400 dark:border-zinc-700 hover:border-zinc-300 hover:dark:border-zinc-800 focus-within:border-zinc-300 focus-within:dark:border-zinc-800 ring-0 hover:ring-2 focus-within:ring-2 ring-zinc-300 dark:ring-zinc-800 transition duration-300;
+  }
+
+  .textbox {
+    @apply outline-none w-full px-3 pt-1.5 pb-1 rounded-full bg-zinc-300 dark:bg-zinc-800 hover:bg-transparent focus-within:bg-transparent border-[1px] border-zinc-400 dark:border-zinc-700 hover:border-zinc-300 hover:dark:border-zinc-800 focus-within:border-zinc-300 focus-within:dark:border-zinc-800 ring-0 hover:ring-2 focus-within:ring-2 ring-zinc-300 dark:ring-zinc-800 transition duration-300;
+  }
+}
